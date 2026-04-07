@@ -64,16 +64,6 @@ src/
 - **Kelvin conversions** — OpenWeatherMap returns temps in Kelvin; conversions are done client-side so we only need one API call per search regardless of selected unit.
 - **Grouped forecast** — the `/forecast` endpoint returns 3-hourly data for 5 days; we group by calendar day and pick the midday entry as representative.
 
-### Trade-offs
-
-| Decision | Reason |
-|---|---|
-| Emoji weather icons | Zero extra requests, no CORS issues, universally supported |
-| Default city: Bangalore | Relevant default; easily changeable |
-| No localStorage for last city | Keeps code simple; not required by spec |
-| `Promise.all` for two API calls | Faster UX — both requests fire in parallel |
-
----
 
 ## API Endpoints Used
 
@@ -82,9 +72,6 @@ src/
 | `/weather?q={city}` | Current weather |
 | `/forecast?q={city}` | 5-day / 3-hour forecast |
 
-Both are part of OpenWeatherMap's **free tier**.
-
----
 
 ## Build for Production
 
