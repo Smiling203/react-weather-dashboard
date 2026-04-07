@@ -65,13 +65,6 @@ src/
 - **Grouped forecast** — the `/forecast` endpoint returns 3-hourly data for 5 days; we group by calendar day and pick the midday entry as representative.
 
 
-## API Endpoints Used
-
-| Endpoint | Purpose |
-|---|---|
-| `/weather?q={city}` | Current weather |
-| `/forecast?q={city}` | 5-day / 3-hour forecast |
-
 
 ## Build for Production
 
