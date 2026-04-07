@@ -19,7 +19,7 @@ A clean, responsive weather dashboard built with **React** and the **OpenWeather
 
 ### 1. Clone the repo
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Smiling203/react-weather-dashboard.git
 cd weather-dashboard
 ```
 
